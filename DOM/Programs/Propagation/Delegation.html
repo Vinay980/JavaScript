@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <button id="btn3">Button 3</button>
+    </div>
+    <script>
+        let div=document.querySelector('.parent')
+
+        div.addEventListener('click',(event)=>{
+            let id=event.target.id
+            // console.log(event.target.id);
+
+            if(id=='btn1'){
+                console.log('btn1 is clicked');
+                
+            } else if(id=='btn2'){
+                console.log('btn2 is clicked');
+                
+            }else if(id=='btn3'){
+                console.log('btn3 is clicked');
+                
+            }
+            
+        })
+    </script>
+</body>
+</html>

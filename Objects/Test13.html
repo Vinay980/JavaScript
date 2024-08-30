@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        main();
+        function main()
+        {
+            let years=getRetYears(2000);
+            console.log("Retirement Years left= "+years);
+
+        }
+        function getRetYears(birthYear,retAge=60)
+        {
+            let d1= new Date();
+            let currYear=d1.getFullYear();
+            let age =currYear-birthYear;
+            let leftYears=retAge-age;
+            return leftYears;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

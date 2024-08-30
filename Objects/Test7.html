@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let student={
+            stuId:"jsp101",
+            firstName:"Vinay",
+            lastName:"Mahto",
+            birthYear:1998,
+            calcAge:function()
+            {
+                let m1=()=>
+                {
+                    console.log("Inner function");
+                    console.log(this);
+                }
+                m1();
+            }
+        }
+        student.calcAge();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

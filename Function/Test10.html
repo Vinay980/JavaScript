@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let Student=new Object();
+        Student.name="Vinay";
+        Studentage="25";
+        let student={
+            stuId:"Jsp101",
+            firstName:"Vinay",
+            lastName:"Mahto",
+            "full name":"Vinay Mahto",
+            birthYear:1998,
+            gender:"Male",
+            "1":"one"
+        };
+        // accessing Props Using . Notation ObjRef .PropName
+        let studentId=student.stuId;
+        let studentName=student.firstName;
+
+        console.log(`Student Id=${studentId},Student Name=${studentName}`);
+
+        // accessing Props Using [] Notation ObjRef [PropName]
+        let studentLastName=student["lastName"];
+        let stuAge=student["age"];
+        let stuFullName=student["full name"];
+        console.log(`Student Name=${studentLastName},Student Age=${stuAge},Student Full Name=${stuFullName}`);
+
+        student.Address="Bengaluru";
+        // delete student.Address;
+        console.log(student);
+
+        // console.log(student.Address);
+        // console.log(student["info"]);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

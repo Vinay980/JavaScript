@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        div{
+            background-color: aquamarine;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <h1 id="display-text">Hey</h1>
+        <br>
+        <div>
+            <button onclick="printHi();">Click Here</button>
+            <button onclick="printHello();">Click Here</button>
+            <button onclick="printBye();">Click Here</button>
+        </div>
+    </div>
+
+
+    <script>
+        function printHi(){
+            let displayTag=document.getElementById("display-text");
+            displayTag.textContent="Hi";
+            displayTag.style.color="blue"
+        }
+
+        function printHello(){
+            let displayTag=document.getElementById("display-text");
+            displayTag.textContent="Hello";
+            displayTag.style.color="yellow"
+        }
+
+        function printBye(){
+            let displayTag=document.getElementById("display-text");
+            displayTag.textContent="Bye";
+            displayTag.style.color="green"
+        }
+    </script>
+</body>
+</html>

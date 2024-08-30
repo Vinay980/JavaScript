@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let travels_1={
+            travelsId:"101",
+            travelsName:"vrl",
+            bookings:[],
+            // book:function(name,seatNo)
+            // {
+            //     console.log(`${name} + Is Booked seat in  ${this.travelsName} travels with SeatNO  ${seatNo}`);
+            //     let pass={passenger:`${name},${this.travelsName}`};
+            //     this.bookings.push(pass);
+            // }
+        }
+        let book=function(name,seatNo)
+            {
+                console.log(`${name} + Is Booked seat in  ${this.travelsName} travels with SeatNO  ${seatNo}`);
+                let pass={passenger:`${name},${this.travelsName}`};
+                this.bookings.push(pass);
+            }
+        console.log(travels_1.bookings);
+        // travels_1.book("Vinay",45);
+        console.log(travels_1.bookings);
+
+        let travels_2={
+            travelsId:"102",
+            travelsName:"Orange",
+            bookings:[]
+        }
+        let abs=book;
+        abs.call(travels_1,"Vinay",12);
+        abs.call(travels_2,"Mahto",13);
+
+        abs.apply(travels_1,["Kumar",23]);
+        let passenger=["Patel",24];
+        abs.apply(travels_1,passenger)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

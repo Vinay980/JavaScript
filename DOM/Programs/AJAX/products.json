@@ -1,0 +1,19 @@
+{
+    "product":[
+        {
+            "accName":"Satish Kumar",
+    "trasactions":[100,400,-500,700,-100,200],
+    "pin":1234
+        },
+        {
+            "accName":"Rajesh Singh",
+    "trasactions":[500,-200,400,-500,800],
+    "pin":2345
+        },
+        {
+            "accName":"Sita Rama Raju",
+    "trasactions":[100,200,900,-200,-300],
+    "pin":3456
+        }
+    ]
+}

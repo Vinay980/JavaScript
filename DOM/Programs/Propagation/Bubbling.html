@@ -1,0 +1,47 @@
+<!-- Bubbling -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: aqua;
+            padding: 50px;
+        }
+        #box2{
+            background-color: rgb(192, 207, 207);
+            padding: 20px;
+        }
+        button{
+            background-color: rgb(123, 180, 237);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div id="box2"><button>click</button></div>
+    </div>
+    <script>
+        let box1=document.querySelector(".box1")
+        let box2=document.querySelector("#box2")
+        let button=document.querySelector("button")
+
+        box1.addEventListener('click',()=>{
+            console.log('clicked box1');
+            
+        })
+        box2.addEventListener('click',()=>{
+            console.log('clicked box2');
+            
+        })
+        button.addEventListener('click',()=>{
+            console.log('clicked btn');
+            
+        })
+    </script>
+</body>
+</html>

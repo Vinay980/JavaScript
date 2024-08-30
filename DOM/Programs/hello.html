@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+        }
+        div{
+            width: 100vw;
+            height: 100px;
+            background-color: aqua;
+            text-align: center;
+            padding: 100px 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="change-text">Hello</h1>
+        <button onclick="hi();">Click Here</button>
+        <button onclick="helllo();">Click Here</button>
+        <button>Click Here</button>
+
+    </div>
+    <script>
+        let disp=document.getElementById('change-text')
+
+
+        function hi()
+        {
+            disp.innerHTML="Hi"
+        }
+
+        function helllo()
+        {
+            disp.innerText="helllo"
+        }
+    </script>
+</body>
+</html>
